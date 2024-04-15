@@ -21,14 +21,14 @@ const menuLinks = [
 
 const Header = () => {
   return (
-    <nav className="bg-black flex justify-between py-8 text-white">
+    <nav className="flex justify-between py-8 text-white z-30  bg-black/50 backdrop-blur-lg sticky top-0">
       <div></div>
-      <div className="flex gap-4 justify-between text-slate-400">
+      <div className="flex gap-4 justify-between text-slate-300">
         {menuLinks.map((link) => (
           <Link
             key={link.url}
             href={`#${link.url}`}
-            className="hover:text-slate-300"
+            className="hover:text-slate-100"
           >
             {link.name}
           </Link>

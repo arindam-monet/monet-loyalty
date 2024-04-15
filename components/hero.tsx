@@ -1,40 +1,47 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Logo from "./logo";
 import SparklesCore from "./sparkles";
+import HoverBorderGradient from "./ui/moving-border-gradient";
+
+const smokyEffectUrl = "/videos/smoky-effect.mp4";
 
 const Hero = () => {
-  return (
-    <section className="h-[80vh] flex justify-center items-center flex-col">
-     
-     <div className="h-full w-full bg-black flex flex-col items-center justify-center overflow-hidden">
-      <div className="text-center">
-        <Logo className="text-yellow-400 fill-current stroke-current w-64 lg:w-80 mx-auto" />
+  const videoRef = useRef<HTMLVideoElement>(null);
 
-        <p className="mt-4 font-light text-xl lg:text-2xl text-slate-400 max-w-sm">An AI driven interoperable loyalty product on blockchain</p>
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (video) {
+      video.play().catch((error) => {
+        console.error("Error playing video", error);
+      });
+    }
+  }, []);
+
+  return (
+    <section className="h-[80vh] flex justify-center items-center flex-col relative">
+      <video
+        ref={videoRef}
+        src={smokyEffectUrl}
+        loop
+        muted
+        autoPlay
+        className="absolute z-10 max-w-none -top-24"
+      ></video>
+
+      <div className="h-full w-full bg-transparent flex flex-col items-center justify-center overflow-hidden z-20">
+        <div className="text-center">
+          <Logo className="text-yellow-400 fill-current stroke-current w-64 lg:w-80 mx-auto" />
+
+          <p className="mt-4 font-light text-xl lg:text-4xl text-slate-200 max-w-sm lg:max-w-md">
+            An AI driven interoperable loyalty product on blockchain
+          </p>
+
+         
+        </div>
       </div>
-      
-      <div className="w-[40rem] h-40 relative">
-        {/* Gradients */}
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
- 
-        {/* Core component */}
-        <SparklesCore
-          background="transparent"
-          minSize={0.4}
-          maxSize={1}
-          particleDensity={1200}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
- 
-        {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-      </div>
-    </div>
     </section>
   );
 };
