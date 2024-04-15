@@ -8,9 +8,11 @@ const Hero = () => {
     <section className="h-[80vh] flex justify-center items-center flex-col">
      
      <div className="h-full w-full bg-black flex flex-col items-center justify-center overflow-hidden">
-      <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
-        Reward your customers royally
-      </h1>
+      <div className="text-center">
+        <Logo className="text-yellow-400 fill-current stroke-current w-64 lg:w-80 mx-auto" />
+
+        <p className="mt-4 font-light text-xl lg:text-2xl text-slate-400 max-w-sm">An AI driven interoperable loyalty product on blockchain</p>
+      </div>
       
       <div className="w-[40rem] h-40 relative">
         {/* Gradients */}
