@@ -21,15 +21,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="h-[80vh] flex justify-center items-center flex-col relative">
-      <video
-        ref={videoRef}
-        src={smokyEffectUrl}
-        loop
-        muted
-        autoPlay
-        className="absolute z-10 max-w-none -top-24"
-      ></video>
+    <section className="h-[80vh] flex justify-center items-center flex-col relative overflow-hidden">
+     
 
       <div className="h-full w-full bg-transparent flex flex-col items-center justify-center overflow-hidden z-20">
         <div className="text-center">
