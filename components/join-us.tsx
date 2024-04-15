@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 
 const JoinUs = () => {
   return (
-    <section className="relative z-20 text-white">
+    <section className="relative z-20 text-white" id="community">
       <div className="">
         <LampContainer>
           <motion.h1
