@@ -32,7 +32,7 @@ const socialIcons = [
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-transparent py-16 text-slate-400 text-center z-20 relative">
+    <footer className="bg-slate-900 py-8 text-slate-300 text-center z-20 relative">
       <div className="flex justify-between items-center container">
         <div className="flex gap-4">
           {socialIcons.map((social) => (
