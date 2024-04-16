@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Logo from "./logo";
 
 const smokeyEffectUrl = "/videos/smokey-effect.mp4";
+const smokeyEffect2Url = "/videos/smokey-effect_2.mp4";
 const smokeyEffectThumbUrl = "/images/smokey-effect-thumbnail.jpg";
 
 
@@ -29,9 +30,9 @@ const Hero = () => {
           className="absolute z-10 max-w-none w-screen object-cover h-full"
           poster={smokeyEffectThumbUrl}
         >
-          <source src={smokeyEffectUrl} type="video/mp4" />
+          <source src={smokeyEffect2Url} type="video/mp4" />
         </video>
-        <div className="w-full absolute z-20 top-0 h-full bg-gradient-to-t from-black to-slate-800 opacity-50"></div>
+        <div className="w-full absolute z-20 top-0 h-full bg-black opacity-80"></div>
 
       <div className="h-full w-full bg-transparent flex flex-col items-center justify-center overflow-hidden z-20">
         <div className="text-center">

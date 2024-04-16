@@ -4,7 +4,7 @@ const About = () => {
       <div className="container py-16">
         <h3 className="text-2xl lg:text-6xl font-semibold">About</h3>
 
-        <div className="lg:max-w-md">
+        <div className="lg:max-w-md text-xl">
         <p className="mt-8">
           {` We've pioneered the use of decentralized $POINTS on the blockchain,
           leveraging an L2 roll-up chain to establish an interoperable reward

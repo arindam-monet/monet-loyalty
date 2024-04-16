@@ -10,7 +10,7 @@ const MonetToken = () => {
         <div className="lg:w-1/2">
            <Image src={"/images/monet-token.svg"} width={200} height={100} className="w-fit object-contain" alt="Monet Token" />
         </div>
-       <div className="lg:w-1/2">
+       <div className="lg:w-1/2 text-xl">
           <p className="mt-8 break-words">
             {`We've pioneered the use of decentralized $POINTS on the blockchain,
             leveraging an L2 roll-up chain to establish an interoperable reward
