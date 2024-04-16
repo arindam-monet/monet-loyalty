@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Logo from "./logo";
 
 const smokeyEffectUrl = "/videos/smokey-effect.mp4";
-const smokeyEffectThumbUrl = "/images/smokey-effect-thumbnail.png";
+const smokeyEffectThumbUrl = "/images/smokey-effect-thumbnail.jpg";
 
 
 const Hero = () => {
@@ -26,7 +26,7 @@ const Hero = () => {
           loop
           muted
           autoPlay
-          className="absolute z-10 max-w-none -top-24 w-screen object-cover f-full"
+          className="absolute z-10 max-w-none w-screen object-cover h-full"
           poster={smokeyEffectThumbUrl}
         >
           <source src={smokeyEffectUrl} type="video/mp4" />
@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="text-center">
           <Logo className="text-yellow-400 fill-current stroke-current w-64 lg:w-80 mx-auto" />
 
-          <p className="mt-4 font-light text-xl lg:text-4xl text-slate-200 max-w-sm lg:max-w-md">
+          <p className="mt-4 font-light text-xl lg:text-4xl text-slate-200 max-w-xs lg:max-w-md">
             An AI driven interoperable loyalty product on blockchain
           </p>
 

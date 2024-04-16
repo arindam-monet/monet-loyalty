@@ -4,6 +4,7 @@ const About = () => {
       <div className="container py-16">
         <h3 className="text-2xl lg:text-6xl font-semibold">About</h3>
 
+        <div className="lg:max-w-md">
         <p className="mt-8">
           {` We've pioneered the use of decentralized $POINTS on the blockchain,
           leveraging an L2 roll-up chain to establish an interoperable reward
@@ -17,6 +18,7 @@ const About = () => {
           recommendations ensure that every reward is optimized for maximum
           utility, tailored to meet the unique needs of each user.`}
         </p>
+        </div>
       </div>
     </section>
   );

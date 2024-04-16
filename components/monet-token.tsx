@@ -1,10 +1,16 @@
+import Image from "next/image";
+
 const MonetToken = () => {
   return (
-    <section className="bg-slate-800 relative z-20 text-white">
+    <section className="bg-black relative z-20 text-white">
       <div className="container py-16">
         <h3 className="text-2xl lg:text-6xl font-semibold">What is $Monet?</h3>
 
+       <div className="lg:flex my-16 gap-16">
         <div className="lg:w-1/2">
+           <Image src={"/images/monet-token.svg"} width={200} height={100} className="w-fit object-contain" alt="Monet Token" />
+        </div>
+       <div className="lg:w-1/2">
           <p className="mt-8 break-words">
             {`We've pioneered the use of decentralized $POINTS on the blockchain,
             leveraging an L2 roll-up chain to establish an interoperable reward
@@ -19,6 +25,7 @@ const MonetToken = () => {
             maximum utility, tailored to meet the unique needs of each user.`}
           </p>
         </div>
+       </div>
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-slate-900 py-8 text-slate-300 text-center z-20 relative">
-      <div className="flex justify-between items-center container">
+      <div className="flex flex-col gap-4 md:flex-row text-xs justify-between items-center container">
         <div className="flex gap-4">
           {socialIcons.map((social) => (
             <a
@@ -43,12 +43,12 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-yellow-300"
             >
-              <social.icon size={24} />
+              <social.icon size={18} />
             </a>
           ))}
         </div>
-        <Logo className="text-slate-400 hover:text-yellow-300 w-40 stroke-current fill-current" />
-        <p>&copy; Monet Work {currentYear}</p>
+        <Logo className="text-slate-400 hover:text-yellow-300 w-24 stroke-current fill-current" />
+        <p>&copy; Monet Work {currentYear}. All rights reserved</p>
       </div>
     </footer>
   );
