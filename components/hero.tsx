@@ -2,10 +2,9 @@
 
 import { useEffect, useRef } from "react";
 import Logo from "./logo";
-import SparklesCore from "./sparkles";
-import HoverBorderGradient from "./ui/moving-border-gradient";
 
-const smokyEffectUrl = "/videos/smoky-effect.mp4";
+const smokyEffectUrl = "/videos/smoke-effect.mp4";
+
 
 const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -21,8 +20,15 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="h-[80vh] flex justify-center items-center flex-col relative overflow-hidden">
-     
+    <section className="min-h-screen flex justify-center items-center flex-col relative overflow-hidden">
+       <video
+          loop
+          muted
+          autoPlay
+          className="absolute z-10 max-w-none -top-24 w-screen object-cover f-full"
+        >
+          <source src={smokyEffectUrl} type="video/mp4" />
+        </video>
 
       <div className="h-full w-full bg-transparent flex flex-col items-center justify-center overflow-hidden z-20">
         <div className="text-center">
