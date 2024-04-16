@@ -3,7 +3,8 @@
 import { useEffect, useRef } from "react";
 import Logo from "./logo";
 
-const smokyEffectUrl = "/videos/smoke-effect.mp4";
+const smokeyEffectUrl = "/videos/smokey-effect.mp4";
+const smokeyEffectThumbUrl = "/images/smokey-effect-thumbnail.png";
 
 
 const Hero = () => {
@@ -20,15 +21,17 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex justify-center items-center flex-col relative overflow-hidden">
+    <section className="min-h-screen bg-black flex justify-center items-center flex-col relative overflow-hidden">
        <video
           loop
           muted
           autoPlay
           className="absolute z-10 max-w-none -top-24 w-screen object-cover f-full"
+          poster={smokeyEffectThumbUrl}
         >
-          <source src={smokyEffectUrl} type="video/mp4" />
+          <source src={smokeyEffectUrl} type="video/mp4" />
         </video>
+        <div className="w-full absolute z-20 top-0 h-full bg-gradient-to-t from-black to-slate-800 opacity-50"></div>
 
       <div className="h-full w-full bg-transparent flex flex-col items-center justify-center overflow-hidden z-20">
         <div className="text-center">
