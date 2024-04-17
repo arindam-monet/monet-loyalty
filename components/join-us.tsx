@@ -19,7 +19,7 @@ const JoinUs = () => {
             decentralized $POINTS and cutting-edge blockchain tech. Don't miss
             out – secure your spot today!`}
           </p>
-          <Button className="text-2xl font-semibold mt-4 py-4 h-16 rounded-lg bg-yellow-600 hover:bg-yellow-800 mx-auto z-50">
+          <Button className="text-2xl font-semibold mt-4 py-4 h-16 rounded-lg bg-[#ffd700] hover:bg-yellow-800 mx-auto z-50 text-black">
             Join our exclusive community!
           </Button>
         </div>
