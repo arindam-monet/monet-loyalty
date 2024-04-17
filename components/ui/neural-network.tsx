@@ -123,13 +123,13 @@ export default function NeuralNetwork() {
   });
 
   return (
-    <group ref={groupRef} dispose={null}>
-      <points ref={particlesRef}>
+    <group ref={groupRef as any} dispose={null}>
+      <points ref={particlesRef as any}>
         <bufferGeometry />
         <pointsMaterial color={new Color('#ffd700')} size={3} blending={AdditiveBlending} transparent={true} sizeAttenuation={false} />
       </points>
       <lineSegments>
-        <bufferGeometry ref={linesGeometryRef} />
+        <bufferGeometry ref={linesGeometryRef as any} />
         <lineBasicMaterial vertexColors={true} blending={AdditiveBlending} transparent={true} />
       </lineSegments>
     </group>
