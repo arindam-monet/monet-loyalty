@@ -5,6 +5,7 @@ import {
   IconBrandLinkedin,
   IconBrandTelegram,
 } from "@tabler/icons-react";
+import ParticleEffect from "./ui/particle-effect";
 
 const socialIcons = [
   {
@@ -32,7 +33,7 @@ const socialIcons = [
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-slate-900 py-8 text-slate-300 text-center z-20 relative">
+    <footer className="bg-black py-8 text-slate-300 text-center z-20 relative">
       <div className="flex flex-col gap-4 md:flex-row text-xs justify-between items-center container">
         <div className="flex gap-4">
           {socialIcons.map((social) => (
