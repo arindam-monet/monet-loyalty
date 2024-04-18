@@ -28,20 +28,20 @@ const items = [
 
 const MonetToken = () => {
   return (
-    <section className="bg-black relative z-20 text-white">
+    <section className="bg-black relative z-20 text-white py-16" id="monet-points">
       <div className="container py-16">
-        <h3 className="text-2xl lg:text-6xl font-semibold">
+        <h3 className="text-4xl lg:text-6xl font-semibold">
           What are we building?
         </h3>
 
         <div className="md:flex my-16 gap-16 items-center">
-          <div className="md:w-1/2 md:h-[500px] overflow-hidden rounded-full">
+          <div className="md:w-1/2 h-[200px] md:h-[400px] overflow-hidden rounded-full">
             <ParticleEffect />
           </div>
           <div className="md:w-1/2 text-xl">
             {items.map((item, index) => (
               <div key={index} className="mt-8">
-                <h4 className="text-2xl lg:text-4xl font-semibold text-[#ffd700]">
+                <h4 className="text-2xl font-semibold text-[#ffd700]">
                   {item.title}
                 </h4>
                 <p className="mt-4 text-base">{item.description}</p>

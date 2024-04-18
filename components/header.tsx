@@ -6,12 +6,12 @@ const menuLinks = [
     url: "about",
   },
   {
-    name: "Tokenomics",
-    url: "tokenomics",
+    name: "What are we building?",
+    url: "monet-points",
   },
   {
-    name: "Roadmap",
-    url: "roadmap",
+    name: "Tokenomics",
+    url: "tokenomics",
   },
   {
     name: "Community",
@@ -28,7 +28,7 @@ const Header = () => {
           <Link
             key={link.url}
             href={`#${link.url}`}
-            className="hover:text-slate-100"
+            className="hover:text-[#ffd700]"
           >
             {link.name}
           </Link>
