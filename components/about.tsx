@@ -1,5 +1,7 @@
 "use client";
 
+import Globe from "./ui/globe";
+
 
 const About = () => {
   return (
@@ -21,11 +23,12 @@ const About = () => {
           utility, tailored to meet the unique needs of each user.`}
             </p>
           </div>
-          <div className="h-[400px] md:w-1/2">
+          <div className="h-[400px] md:w-1/2 relative">
             {/* <Canvas camera={{ position: [0, 4, 15], zoom: 0.75 }}>
               <NeuralNetwork />
               <OrbitControls />
             </Canvas> */}
+            <Globe className="absolute -top-20" />
           </div>
         </div>
       </div>
