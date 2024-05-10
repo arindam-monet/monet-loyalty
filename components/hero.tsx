@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import Logo from "./logo";
 
 const smokeyEffectUrl = "/videos/smokey-effect_3.mp4";
-const smokeyEffect2Url = "/videos/smokey-effect_2.mp4";
 const smokeyEffectThumbUrl = "/images/smokey-effect-thumbnail.jpg";
 
 const Hero = () => {
