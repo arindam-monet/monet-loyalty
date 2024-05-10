@@ -23,12 +23,12 @@ const About = () => {
           utility, tailored to meet the unique needs of each user.`}
             </p>
           </div>
-          <div className="h-[400px] md:w-1/2 relative">
+          <div className="h-[400px] w-full md:w-1/2 relative">
             {/* <Canvas camera={{ position: [0, 4, 15], zoom: 0.75 }}>
               <NeuralNetwork />
               <OrbitControls />
             </Canvas> */}
-            <Globe className="absolute -top-20" />
+            <Globe className="absolute left-0 md:left-auto md:-top-20" />
           </div>
         </div>
       </div>
