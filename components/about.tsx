@@ -1,8 +1,5 @@
 "use client";
 
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import NeuralNetwork from "./ui/neural-network";
 
 const About = () => {
   return (
@@ -25,10 +22,10 @@ const About = () => {
             </p>
           </div>
           <div className="h-[400px] md:w-1/2">
-            <Canvas camera={{ position: [0, 4, 15], zoom: 0.75 }}>
+            {/* <Canvas camera={{ position: [0, 4, 15], zoom: 0.75 }}>
               <NeuralNetwork />
               <OrbitControls />
-            </Canvas>
+            </Canvas> */}
           </div>
         </div>
       </div>
